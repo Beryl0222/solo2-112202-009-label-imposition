@@ -1,0 +1,5 @@
+id	product	lot	market	qty	promised	stage	assets
+D1	甲	V8	南区	60	2026-10-15	已印待发	P1|P2
+D2	乙	W9	南区	50	2026-10-15	已发	P1|P3
+D3	乙	W9	北区	20		待排	
+D4	甲	V9	南区	40		待排	

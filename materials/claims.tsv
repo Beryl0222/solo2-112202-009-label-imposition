@@ -1,0 +1,5 @@
+id	lang	market	scope	parent	text
+C1	zh	通用	甲		仅甲系列支持 24 V 适配器，需另购。乙系列仅可用 12 V。
+C2	es	南区	甲	C1	Compatible con 24 V, solo serie A. Adaptador no incluido.
+C3	es	南区	乙	C1	Solo adaptador de 12 V para la serie B.
+C4	zh	通用	甲	C1	甲 24 V 声明撤回，甲批 V8 可按包装更新后的 12 V 文字销售。

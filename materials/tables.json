@@ -1,0 +1,65 @@
+{
+  "columns": {
+    "claims.tsv": [
+      "id",
+      "lang",
+      "market",
+      "scope",
+      "parent",
+      "text"
+    ],
+    "print_surfaces.tsv": [
+      "id",
+      "sku",
+      "lang",
+      "layer",
+      "removable",
+      "covers",
+      "text"
+    ],
+    "dispatch.tsv": [
+      "id",
+      "product",
+      "lot",
+      "market",
+      "qty",
+      "promised",
+      "stage",
+      "assets"
+    ],
+    "stock.tsv": [
+      "id",
+      "item",
+      "qty",
+      "region"
+    ],
+    "sales_channels.tsv": [
+      "id",
+      "market",
+      "stage_visibility"
+    ]
+  },
+  "references": [
+    [
+      "print_surfaces.tsv",
+      "covers",
+      "print_surfaces.tsv"
+    ],
+    [
+      "dispatch.tsv",
+      "assets",
+      "print_surfaces.tsv"
+    ],
+    [
+      "stock.tsv",
+      "item",
+      "print_surfaces.tsv"
+    ],
+    [
+      "claims.tsv",
+      "parent",
+      "claims.tsv"
+    ]
+  ],
+  "compound_keys": []
+}
