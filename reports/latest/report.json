@@ -1,0 +1,1482 @@
+{
+  "summary": {
+    "pack": "materials",
+    "today": "2026-11-24",
+    "claim_count": 4,
+    "surface_count": 5,
+    "editorial_blockers": 2,
+    "executable_batch_ids": [
+      "D1"
+    ],
+    "shipped_batch_ids": [
+      "D2"
+    ],
+    "needs_reprint_batch_ids": [
+      "D3",
+      "D4"
+    ],
+    "partial_batch_ids": []
+  },
+  "claim_register": [
+    {
+      "id": "C1",
+      "row": {
+        "id": "C1",
+        "lang": "zh",
+        "market": "通用",
+        "scope": "甲",
+        "parent": "",
+        "text": "仅甲系列支持 24 V 适配器，需另购。乙系列仅可用 12 V。"
+      },
+      "text": "仅甲系列支持 24 V 适配器，需另购。乙系列仅可用 12 V。",
+      "series": [
+        "A",
+        "B"
+      ],
+      "voltages": [
+        "12V",
+        "24V"
+      ],
+      "lots": [],
+      "atoms": [
+        {
+          "start": 0,
+          "end": 4,
+          "quote": "仅甲系列",
+          "kind": "series_gate",
+          "value": "A"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "quote": "24 V",
+          "kind": "voltage_permission",
+          "value": "24V"
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "quote": "适配器，需另购",
+          "kind": "commercial_condition",
+          "value": "adapter_not_included_or_separate"
+        },
+        {
+          "start": 20,
+          "end": 21,
+          "quote": "乙",
+          "kind": "series_scope",
+          "value": "B"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "quote": "12 V",
+          "kind": "voltage_only",
+          "value": "12V"
+        }
+      ],
+      "withdrawals": [],
+      "clauses": [
+        {
+          "start": 0,
+          "end": 20,
+          "text": "仅甲系列支持 24 V 适配器，需另购。"
+        },
+        {
+          "start": 20,
+          "end": 32,
+          "text": "乙系列仅可用 12 V。"
+        }
+      ],
+      "atom_keys": [
+        "commercial_condition:adapter_not_included_or_separate",
+        "series_gate:A",
+        "series_scope:B",
+        "voltage_only:12V",
+        "voltage_permission:24V"
+      ],
+      "scope_canonical": "A",
+      "market": "通用",
+      "lang": "zh",
+      "parent": ""
+    },
+    {
+      "id": "C2",
+      "row": {
+        "id": "C2",
+        "lang": "es",
+        "market": "南区",
+        "scope": "甲",
+        "parent": "C1",
+        "text": "Compatible con 24 V, solo serie A. Adaptador no incluido."
+      },
+      "text": "Compatible con 24 V, solo serie A. Adaptador no incluido.",
+      "series": [
+        "A"
+      ],
+      "voltages": [
+        "24V"
+      ],
+      "lots": [],
+      "atoms": [
+        {
+          "start": 21,
+          "end": 33,
+          "quote": "solo serie A",
+          "kind": "series_gate",
+          "value": "A"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "quote": "24 V",
+          "kind": "voltage_permission",
+          "value": "24V"
+        },
+        {
+          "start": 35,
+          "end": 56,
+          "quote": "Adaptador no incluido",
+          "kind": "commercial_condition",
+          "value": "adapter_not_included_or_separate"
+        }
+      ],
+      "withdrawals": [],
+      "clauses": [
+        {
+          "start": 0,
+          "end": 34,
+          "text": "Compatible con 24 V, solo serie A."
+        },
+        {
+          "start": 35,
+          "end": 57,
+          "text": "Adaptador no incluido."
+        }
+      ],
+      "atom_keys": [
+        "commercial_condition:adapter_not_included_or_separate",
+        "series_gate:A",
+        "voltage_permission:24V"
+      ],
+      "scope_canonical": "A",
+      "market": "南区",
+      "lang": "es",
+      "parent": "C1"
+    },
+    {
+      "id": "C3",
+      "row": {
+        "id": "C3",
+        "lang": "es",
+        "market": "南区",
+        "scope": "乙",
+        "parent": "C1",
+        "text": "Solo adaptador de 12 V para la serie B."
+      },
+      "text": "Solo adaptador de 12 V para la serie B.",
+      "series": [
+        "B"
+      ],
+      "voltages": [
+        "12V"
+      ],
+      "lots": [],
+      "atoms": [
+        {
+          "start": 31,
+          "end": 38,
+          "quote": "serie B",
+          "kind": "series_scope",
+          "value": "B"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "quote": "12 V",
+          "kind": "voltage_only",
+          "value": "12V"
+        }
+      ],
+      "withdrawals": [],
+      "clauses": [
+        {
+          "start": 0,
+          "end": 39,
+          "text": "Solo adaptador de 12 V para la serie B."
+        }
+      ],
+      "atom_keys": [
+        "series_scope:B",
+        "voltage_only:12V"
+      ],
+      "scope_canonical": "B",
+      "market": "南区",
+      "lang": "es",
+      "parent": "C1"
+    },
+    {
+      "id": "C4",
+      "row": {
+        "id": "C4",
+        "lang": "zh",
+        "market": "通用",
+        "scope": "甲",
+        "parent": "C1",
+        "text": "甲 24 V 声明撤回，甲批 V8 可按包装更新后的 12 V 文字销售。"
+      },
+      "text": "甲 24 V 声明撤回，甲批 V8 可按包装更新后的 12 V 文字销售。",
+      "series": [
+        "A"
+      ],
+      "voltages": [
+        "12V",
+        "24V"
+      ],
+      "lots": [
+        "V8"
+      ],
+      "atoms": [
+        {
+          "start": 0,
+          "end": 1,
+          "quote": "甲",
+          "kind": "series_scope",
+          "value": "A"
+        },
+        {
+          "start": 2,
+          "end": 6,
+          "quote": "24 V",
+          "kind": "withdrawn_voltage",
+          "value": "24V"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "quote": "12 V",
+          "kind": "voltage_mentioned",
+          "value": "12V"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "quote": "V8",
+          "kind": "lot_scope",
+          "value": "V8"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "quote": "撤回",
+          "kind": "withdrawal",
+          "value": "claim_withdrawn"
+        }
+      ],
+      "withdrawals": [
+        {
+          "span": {
+            "start": 9,
+            "end": 11,
+            "quote": "撤回"
+          },
+          "target_voltages": [
+            "24V"
+          ],
+          "target_series": "A",
+          "clause_start": 0,
+          "clause_end": 37,
+          "allowed_voltages": [
+            "12V"
+          ],
+          "transition_lots": [
+            "V8"
+          ]
+        }
+      ],
+      "clauses": [
+        {
+          "start": 0,
+          "end": 37,
+          "text": "甲 24 V 声明撤回，甲批 V8 可按包装更新后的 12 V 文字销售。"
+        }
+      ],
+      "atom_keys": [
+        "lot_scope:V8",
+        "series_scope:A",
+        "voltage_mentioned:12V",
+        "withdrawal:claim_withdrawn",
+        "withdrawn_voltage:24V"
+      ],
+      "scope_canonical": "A",
+      "market": "通用",
+      "lang": "zh",
+      "parent": "C1"
+    }
+  ],
+  "surface_register": [
+    {
+      "row": {
+        "id": "P1",
+        "sku": "底盒甲乙",
+        "lang": "es",
+        "layer": "1",
+        "removable": "否",
+        "covers": "",
+        "text": "Compatible con 24 V"
+      },
+      "id": "P1",
+      "kind": "base_box",
+      "layer": 1,
+      "removable": false,
+      "removable_text": "否",
+      "visible_stage": "display",
+      "permanent_outer": true,
+      "covers": [],
+      "statement": {
+        "text": "Compatible con 24 V",
+        "series": [],
+        "voltages": [
+          "24V"
+        ],
+        "lots": [],
+        "atoms": [
+          {
+            "start": 15,
+            "end": 19,
+            "quote": "24 V",
+            "kind": "voltage_permission",
+            "value": "24V"
+          }
+        ],
+        "withdrawals": [],
+        "clauses": [
+          {
+            "start": 0,
+            "end": 19,
+            "text": "Compatible con 24 V"
+          }
+        ],
+        "atom_keys": [
+          "voltage_permission:24V"
+        ]
+      }
+    },
+    {
+      "row": {
+        "id": "P2",
+        "sku": "价签A",
+        "lang": "es",
+        "layer": "2",
+        "removable": "购买时可揭",
+        "covers": "",
+        "text": "Solo serie A"
+      },
+      "id": "P2",
+      "kind": "sticker_or_label",
+      "layer": 2,
+      "removable": true,
+      "removable_text": "购买时可揭",
+      "visible_stage": "purchase",
+      "permanent_outer": false,
+      "covers": [],
+      "statement": {
+        "text": "Solo serie A",
+        "series": [
+          "A"
+        ],
+        "voltages": [],
+        "lots": [],
+        "atoms": [
+          {
+            "start": 0,
+            "end": 12,
+            "quote": "Solo serie A",
+            "kind": "series_gate",
+            "value": "A"
+          }
+        ],
+        "withdrawals": [],
+        "clauses": [
+          {
+            "start": 0,
+            "end": 12,
+            "text": "Solo serie A"
+          }
+        ],
+        "atom_keys": [
+          "series_gate:A"
+        ]
+      }
+    },
+    {
+      "row": {
+        "id": "P3",
+        "sku": "南区乙",
+        "lang": "es",
+        "layer": "3",
+        "removable": "否",
+        "covers": "P1",
+        "text": "Solo 12 V. Serie B."
+      },
+      "id": "P3",
+      "kind": "sticker_or_label",
+      "layer": 3,
+      "removable": false,
+      "removable_text": "否",
+      "visible_stage": "display",
+      "permanent_outer": true,
+      "covers": [
+        "P1"
+      ],
+      "statement": {
+        "text": "Solo 12 V. Serie B.",
+        "series": [
+          "B"
+        ],
+        "voltages": [
+          "12V"
+        ],
+        "lots": [],
+        "atoms": [
+          {
+            "start": 5,
+            "end": 9,
+            "quote": "12 V",
+            "kind": "voltage_only",
+            "value": "12V"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "quote": "Serie B",
+            "kind": "series_scope",
+            "value": "B"
+          }
+        ],
+        "withdrawals": [],
+        "clauses": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "Solo 12 V."
+          },
+          {
+            "start": 11,
+            "end": 19,
+            "text": "Serie B."
+          }
+        ],
+        "atom_keys": [
+          "series_scope:B",
+          "voltage_only:12V"
+        ]
+      }
+    },
+    {
+      "row": {
+        "id": "P4",
+        "sku": "南区甲补",
+        "lang": "es",
+        "layer": "4",
+        "removable": "否",
+        "covers": "P1",
+        "text": "Solo 12 V. Serie A, lote V8."
+      },
+      "id": "P4",
+      "kind": "sticker_or_label",
+      "layer": 4,
+      "removable": false,
+      "removable_text": "否",
+      "visible_stage": "display",
+      "permanent_outer": true,
+      "covers": [
+        "P1"
+      ],
+      "statement": {
+        "text": "Solo 12 V. Serie A, lote V8.",
+        "series": [
+          "A"
+        ],
+        "voltages": [
+          "12V"
+        ],
+        "lots": [
+          "V8"
+        ],
+        "atoms": [
+          {
+            "start": 5,
+            "end": 9,
+            "quote": "12 V",
+            "kind": "voltage_only",
+            "value": "12V"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "quote": "Serie A",
+            "kind": "series_scope",
+            "value": "A"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "quote": "V8",
+            "kind": "lot_scope",
+            "value": "V8"
+          }
+        ],
+        "withdrawals": [],
+        "clauses": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "Solo 12 V."
+          },
+          {
+            "start": 11,
+            "end": 28,
+            "text": "Serie A, lote V8."
+          }
+        ],
+        "atom_keys": [
+          "lot_scope:V8",
+          "series_scope:A",
+          "voltage_only:12V"
+        ]
+      }
+    },
+    {
+      "row": {
+        "id": "P5",
+        "sku": "箱内卡",
+        "lang": "es",
+        "layer": "1",
+        "removable": "开盒才可见",
+        "covers": "",
+        "text": "Adaptador no incluido"
+      },
+      "id": "P5",
+      "kind": "insert_card",
+      "layer": 1,
+      "removable": false,
+      "removable_text": "开盒才可见",
+      "visible_stage": "opening",
+      "permanent_outer": false,
+      "covers": [],
+      "statement": {
+        "text": "Adaptador no incluido",
+        "series": [],
+        "voltages": [],
+        "lots": [],
+        "atoms": [
+          {
+            "start": 0,
+            "end": 21,
+            "quote": "Adaptador no incluido",
+            "kind": "commercial_condition",
+            "value": "adapter_not_included_or_separate"
+          }
+        ],
+        "withdrawals": [],
+        "clauses": [
+          {
+            "start": 0,
+            "end": 21,
+            "text": "Adaptador no incluido"
+          }
+        ],
+        "atom_keys": [
+          "commercial_condition:adapter_not_included_or_separate"
+        ]
+      }
+    }
+  ],
+  "editorial": {
+    "findings": [
+      {
+        "code": "EPHEMERAL_QUALIFIER",
+        "severity": "blocker",
+        "title": "兼容性与系列限定被拆开，且限定位于可揭/可撕区域",
+        "surface_ids": [
+          "P1",
+          "P2"
+        ],
+        "claim_ids": [
+          "C2"
+        ],
+        "locations": [
+          {
+            "file": "print_surfaces.tsv",
+            "row": 2,
+            "id": "P1",
+            "role": "detached_compatibility",
+            "field": "text",
+            "tsv_col": 17,
+            "coordinate": "print_surfaces.tsv:2:17",
+            "char_start": 15,
+            "char_end": 19,
+            "start_coordinate": "print_surfaces.tsv:2:32",
+            "quote": "24 V"
+          },
+          {
+            "file": "print_surfaces.tsv",
+            "row": 3,
+            "id": "P2",
+            "role": "ephemeral_series_limit",
+            "field": "text",
+            "tsv_col": 20,
+            "coordinate": "print_surfaces.tsv:3:20",
+            "char_start": 0,
+            "char_end": 12,
+            "start_coordinate": "print_surfaces.tsv:3:20",
+            "quote": "Solo serie A"
+          }
+        ],
+        "source_locations": [
+          {
+            "file": "claims.tsv",
+            "row": 2,
+            "id": "C1",
+            "role": "source_claim",
+            "field": "text",
+            "tsv_col": 13,
+            "coordinate": "claims.tsv:2:13",
+            "char_start": 0,
+            "char_end": 20,
+            "start_coordinate": "claims.tsv:2:13",
+            "quote": "仅甲系列支持 24 V 适配器，需另购。"
+          }
+        ],
+        "translation_locations": [
+          {
+            "file": "claims.tsv",
+            "row": 3,
+            "id": "C2",
+            "role": "translated_claim",
+            "field": "text",
+            "tsv_col": 15,
+            "coordinate": "claims.tsv:3:15",
+            "char_start": 0,
+            "char_end": 34,
+            "start_coordinate": "claims.tsv:3:15",
+            "quote": "Compatible con 24 V, solo serie A."
+          }
+        ],
+        "withdrawal_locations": [
+          {
+            "file": "claims.tsv",
+            "row": 5,
+            "id": "C4",
+            "role": "withdrawal_notice",
+            "field": "text",
+            "tsv_col": 15,
+            "coordinate": "claims.tsv:5:15",
+            "char_start": 9,
+            "char_end": 11,
+            "start_coordinate": "claims.tsv:5:24",
+            "quote": "撤回"
+          }
+        ],
+        "rule": "按限定消失后的到盒文本判定；可移除价格签只能作为印厂内部核对线索，不能承担合规限定。",
+        "required_action": "把完整兼容/限定句移到永久外贴，或用永久层完整覆盖旧句；不得依赖可撕价格签。"
+      },
+      {
+        "code": "WITHDRAWN_CLAIM_ON_PLATE",
+        "severity": "blocker",
+        "title": "24V 主张已撤回，但旧文字仍在未被覆盖的共版区域",
+        "claim_ids": [
+          "C4"
+        ],
+        "surface_ids": [
+          "P1"
+        ],
+        "locations": [
+          {
+            "file": "claims.tsv",
+            "row": 5,
+            "id": "C4",
+            "role": "withdrawal_notice",
+            "field": "text",
+            "tsv_col": 15,
+            "coordinate": "claims.tsv:5:15",
+            "char_start": 9,
+            "char_end": 11,
+            "start_coordinate": "claims.tsv:5:24",
+            "quote": "撤回"
+          },
+          {
+            "file": "print_surfaces.tsv",
+            "row": 2,
+            "id": "P1",
+            "role": "withdrawn_print_text",
+            "field": "text",
+            "tsv_col": 17,
+            "coordinate": "print_surfaces.tsv:2:17",
+            "char_start": 15,
+            "char_end": 19,
+            "start_coordinate": "print_surfaces.tsv:2:32",
+            "quote": "24 V"
+          }
+        ],
+        "source_locations": [
+          {
+            "file": "claims.tsv",
+            "row": 2,
+            "id": "C1",
+            "role": "source_claim",
+            "field": "text",
+            "tsv_col": 13,
+            "coordinate": "claims.tsv:2:13",
+            "char_start": 0,
+            "char_end": 20,
+            "start_coordinate": "claims.tsv:2:13",
+            "quote": "仅甲系列支持 24 V 适配器，需另购。"
+          }
+        ],
+        "translation_locations": [
+          {
+            "file": "claims.tsv",
+            "row": 3,
+            "id": "C2",
+            "role": "translated_claim",
+            "field": "text",
+            "tsv_col": 15,
+            "coordinate": "claims.tsv:3:15",
+            "char_start": 0,
+            "char_end": 34,
+            "start_coordinate": "claims.tsv:3:15",
+            "quote": "Compatible con 24 V, solo serie A."
+          }
+        ],
+        "withdrawal_locations": [
+          {
+            "file": "claims.tsv",
+            "row": 5,
+            "id": "C4",
+            "role": "withdrawal_notice",
+            "field": "text",
+            "tsv_col": 15,
+            "coordinate": "claims.tsv:5:15",
+            "char_start": 9,
+            "char_end": 11,
+            "start_coordinate": "claims.tsv:5:24",
+            "quote": "撤回"
+          }
+        ],
+        "rule": "已完成印刷但未签收时，按实际市场和物理补救决定隔离、贴补或返印。",
+        "required_action": "隔离旧盒；用含当前电压、系列和批号范围的永久贴完整覆盖，或返印。"
+      },
+      {
+        "code": "ACCEPTED_PERMANENT_CORRECTION",
+        "severity": "ok",
+        "title": "永久覆盖层包含电压和系列范围，可作为贴补候选",
+        "surface_ids": [
+          "P3"
+        ],
+        "locations": [
+          {
+            "file": "print_surfaces.tsv",
+            "row": 4,
+            "id": "P3",
+            "field": "text",
+            "tsv_col": 18,
+            "coordinate": "print_surfaces.tsv:4:18"
+          }
+        ],
+        "covers": [
+          "P1"
+        ],
+        "lots": [],
+        "rule": "必须完整覆盖错误句，并在同一外盒销售阶段保留全部限定。",
+        "required_action": "仅在市场、系列、批号和库存数量匹配时贴补放行。"
+      },
+      {
+        "code": "ACCEPTED_PERMANENT_CORRECTION",
+        "severity": "ok",
+        "title": "永久覆盖层包含电压和系列范围，可作为贴补候选",
+        "surface_ids": [
+          "P4"
+        ],
+        "locations": [
+          {
+            "file": "print_surfaces.tsv",
+            "row": 5,
+            "id": "P4",
+            "field": "text",
+            "tsv_col": 19,
+            "coordinate": "print_surfaces.tsv:5:19"
+          }
+        ],
+        "covers": [
+          "P1"
+        ],
+        "lots": [
+          "V8"
+        ],
+        "rule": "必须完整覆盖错误句，并在同一外盒销售阶段保留全部限定。",
+        "required_action": "仅在市场、系列、批号和库存数量匹配时贴补放行。"
+      },
+      {
+        "code": "CONDITION_STAGE_VISIBILITY",
+        "severity": "notice",
+        "title": "附带条件已与原声明对上，但可见阶段不同",
+        "surface_ids": [
+          "P5"
+        ],
+        "claim_ids": [
+          "C2",
+          "C1"
+        ],
+        "locations": [
+          {
+            "file": "print_surfaces.tsv",
+            "row": 6,
+            "id": "P5",
+            "role": "condition_text",
+            "field": "text",
+            "tsv_col": 20,
+            "coordinate": "print_surfaces.tsv:6:20",
+            "char_start": 0,
+            "char_end": 21,
+            "start_coordinate": "print_surfaces.tsv:6:20",
+            "quote": "Adaptador no incluido"
+          }
+        ],
+        "visible_stage": "opening",
+        "rule": "箱内卡可随盒到达顾客，但不能补回外盒在摆货/付款阶段已经断开的系列限定。",
+        "required_action": "按市场披露窗口确认是否需在外层同步；校勘时保留阶段证据。"
+      },
+      {
+        "code": "LOT_SCOPED_PRINT",
+        "severity": "notice",
+        "title": "印面文字带批号范围，不能跨批号通用",
+        "surface_ids": [
+          "P4"
+        ],
+        "locations": [
+          {
+            "file": "print_surfaces.tsv",
+            "row": 5,
+            "id": "P4",
+            "role": "lot_scope",
+            "field": "text",
+            "tsv_col": 19,
+            "coordinate": "print_surfaces.tsv:5:19",
+            "char_start": 25,
+            "char_end": 27,
+            "start_coordinate": "print_surfaces.tsv:5:44",
+            "quote": "V8"
+          }
+        ],
+        "lots": [
+          "V8"
+        ],
+        "required_action": "排产时逐批号匹配；V8 文字不能默认用于 V9。"
+      }
+    ],
+    "links": [
+      {
+        "surface_id": "P1",
+        "claim_matches": [
+          {
+            "claim_id": "C2",
+            "score": 8,
+            "reasons": [
+              "same_language",
+              "exact_text_fragment",
+              "voltage_value"
+            ]
+          }
+        ],
+        "source_claim_ids": [
+          "C1"
+        ]
+      },
+      {
+        "surface_id": "P2",
+        "claim_matches": [
+          {
+            "claim_id": "C2",
+            "score": 7,
+            "reasons": [
+              "same_language",
+              "exact_text_fragment",
+              "series_value"
+            ]
+          }
+        ],
+        "source_claim_ids": [
+          "C1"
+        ]
+      },
+      {
+        "surface_id": "P3",
+        "claim_matches": [
+          {
+            "claim_id": "C3",
+            "score": 6,
+            "reasons": [
+              "same_language",
+              "voltage:12V",
+              "series:B"
+            ]
+          },
+          {
+            "claim_id": "C1",
+            "score": 5,
+            "reasons": [
+              "voltage:12V",
+              "series:B"
+            ]
+          }
+        ],
+        "source_claim_ids": []
+      },
+      {
+        "surface_id": "P4",
+        "claim_matches": [
+          {
+            "claim_id": "C4",
+            "score": 12,
+            "reasons": [
+              "series:A",
+              "lot:V8",
+              "voltage_value",
+              "transition_voltage",
+              "transition_lot",
+              "transition_series"
+            ]
+          }
+        ],
+        "source_claim_ids": [
+          "C1"
+        ]
+      },
+      {
+        "surface_id": "P5",
+        "claim_matches": [
+          {
+            "claim_id": "C2",
+            "score": 6,
+            "reasons": [
+              "same_language",
+              "exact_text_fragment"
+            ]
+          }
+        ],
+        "source_claim_ids": [
+          "C1"
+        ]
+      }
+    ]
+  },
+  "planning": {
+    "today": "2026-11-24",
+    "batches": [
+      {
+        "id": "D1",
+        "state": "active",
+        "product": "甲",
+        "lot": "V8",
+        "market": "南区",
+        "qty": 60,
+        "promised": "2026-10-15",
+        "promised_date": "2026-10-15",
+        "overdue": true,
+        "stage": "已印待发",
+        "existing_assets": [
+          "P1",
+          "P2"
+        ],
+        "decision": "quarantine_then_patch_release",
+        "action": "先隔离，再按分配数量贴永久覆盖层；覆盖并复核后投放订单市场。",
+        "executable": true,
+        "covered_qty": 60,
+        "short_qty": 0,
+        "allocations": [
+          {
+            "batch_id": "D1",
+            "stock_id": "I3",
+            "surface_id": "P4",
+            "qty": 60,
+            "region": "南区"
+          }
+        ],
+        "effective_assets": [
+          "P1",
+          "P2",
+          "P4"
+        ],
+        "evaluation": {
+          "compliant": true,
+          "blockers": [],
+          "warnings": [
+            {
+              "code": "MISSING_CONDITION_TEXT",
+              "message": "原声明含附带条件，但组合中没有对应印面；需业务/法规确认是否阻断"
+            }
+          ],
+          "requirements": {
+            "series": "A",
+            "market": "南区",
+            "forbidden_voltages": [
+              "24V"
+            ],
+            "required_voltages": [
+              "12V"
+            ],
+            "withdrawal_claim_ids": [
+              "C4"
+            ]
+          },
+          "surface_ids": [
+            "P1",
+            "P2",
+            "P4"
+          ],
+          "visible_surface_ids": [
+            "P2",
+            "P4"
+          ],
+          "durable_outer_ids": [
+            "P4"
+          ],
+          "opening_ids": [],
+          "hidden_coverage": {
+            "P1": "P4"
+          },
+          "collated_text": [
+            {
+              "id": "P2",
+              "layer": 2,
+              "text": "Solo serie A"
+            },
+            {
+              "id": "P4",
+              "layer": 4,
+              "text": "Solo 12 V. Serie A, lote V8."
+            }
+          ]
+        },
+        "blocked_candidate": null,
+        "chosen_option": {
+          "kind": "add_permanent_patch",
+          "surface_ids": [
+            "P1",
+            "P2",
+            "P4"
+          ],
+          "additions": [
+            "P4"
+          ],
+          "compliant": true,
+          "blockers": [],
+          "warnings": [
+            {
+              "code": "MISSING_CONDITION_TEXT",
+              "message": "原声明含附带条件，但组合中没有对应印面；需业务/法规确认是否阻断"
+            }
+          ],
+          "region_blocked": false,
+          "blocked_surfaces": [],
+          "currently_coverable_qty": 60
+        },
+        "channel": {
+          "id": "SC1",
+          "market": "南区",
+          "stage_visibility": "摆货看底盒正面及永久外贴，价格签付款可揭，箱内卡仅开箱可见"
+        },
+        "priority": {
+          "promised": true,
+          "rank_key": [
+            0,
+            "2026-10-15",
+            "D1"
+          ]
+        }
+      },
+      {
+        "id": "D2",
+        "state": "shipped",
+        "product": "乙",
+        "lot": "W9",
+        "market": "南区",
+        "qty": 50,
+        "promised": "2026-10-15",
+        "stage": "已发",
+        "existing_assets": [
+          "P1",
+          "P3"
+        ],
+        "effective_assets": [
+          "P1",
+          "P3"
+        ],
+        "executable": false,
+        "already_executed": true,
+        "compliant_record": true,
+        "decision": "shipped_trace",
+        "follow_up": "record_only",
+        "action": "归档该批文字组合；如后续收到声明改版，按市场追溯同号批次。",
+        "contact": {
+          "market": "南区",
+          "channel_record_id": "SC1",
+          "destination": "南区渠道收货方（资料未提供具体单位/联系人）"
+        },
+        "held_text": [
+          {
+            "id": "P3",
+            "layer": 3,
+            "text": "Solo 12 V. Serie B."
+          }
+        ],
+        "evaluation": {
+          "compliant": true,
+          "blockers": [],
+          "warnings": [],
+          "requirements": {
+            "series": "B",
+            "market": "南区",
+            "forbidden_voltages": [],
+            "required_voltages": [
+              "12V"
+            ],
+            "withdrawal_claim_ids": []
+          },
+          "surface_ids": [
+            "P1",
+            "P3"
+          ],
+          "visible_surface_ids": [
+            "P3"
+          ],
+          "durable_outer_ids": [
+            "P3"
+          ],
+          "opening_ids": [],
+          "hidden_coverage": {
+            "P1": "P3"
+          },
+          "collated_text": [
+            {
+              "id": "P3",
+              "layer": 3,
+              "text": "Solo 12 V. Serie B."
+            }
+          ]
+        },
+        "channel": {
+          "id": "SC1",
+          "market": "南区",
+          "stage_visibility": "摆货看底盒正面及永久外贴，价格签付款可揭，箱内卡仅开箱可见"
+        },
+        "allocations": [],
+        "covered_qty": 50,
+        "short_qty": 0
+      },
+      {
+        "id": "D3",
+        "state": "active",
+        "product": "乙",
+        "lot": "W9",
+        "market": "北区",
+        "qty": 20,
+        "promised": "",
+        "promised_date": "",
+        "overdue": false,
+        "stage": "待排",
+        "existing_assets": [],
+        "decision": "channel_or_stock_blocked",
+        "action": "文字组合本身可校勘通过，但缺少该市场可用的在库贴纸；不得挪用其他渠道登记库存，应补印/调拨。",
+        "executable": false,
+        "covered_qty": 0,
+        "short_qty": 20,
+        "allocations": [],
+        "effective_assets": [],
+        "evaluation": {
+          "compliant": true,
+          "blockers": [],
+          "warnings": [],
+          "requirements": {
+            "series": "B",
+            "market": "北区",
+            "forbidden_voltages": [],
+            "required_voltages": [
+              "12V"
+            ],
+            "withdrawal_claim_ids": []
+          },
+          "surface_ids": [
+            "P1",
+            "P3"
+          ],
+          "visible_surface_ids": [
+            "P3"
+          ],
+          "durable_outer_ids": [
+            "P3"
+          ],
+          "opening_ids": [],
+          "hidden_coverage": {
+            "P1": "P3"
+          },
+          "collated_text": [
+            {
+              "id": "P3",
+              "layer": 3,
+              "text": "Solo 12 V. Serie B."
+            }
+          ]
+        },
+        "blocked_candidate": {
+          "kind": "new_stock_combo",
+          "surface_ids": [
+            "P1",
+            "P3"
+          ],
+          "additions": [
+            "P3"
+          ],
+          "compliant": true,
+          "blockers": [],
+          "warnings": [],
+          "region_blocked": true,
+          "blocked_surfaces": [
+            "P3"
+          ],
+          "currently_coverable_qty": 0
+        },
+        "chosen_option": null,
+        "channel": {
+          "id": "SC2",
+          "market": "北区",
+          "stage_visibility": "整盒柜台查外标，南区文字只用于南区销售"
+        },
+        "priority": {
+          "promised": false,
+          "rank_key": [
+            1,
+            "9999-12-31",
+            "D3"
+          ]
+        }
+      },
+      {
+        "id": "D4",
+        "state": "active",
+        "product": "甲",
+        "lot": "V9",
+        "market": "南区",
+        "qty": 40,
+        "promised": "",
+        "promised_date": "",
+        "overdue": false,
+        "stage": "待排",
+        "existing_assets": [],
+        "decision": "reprint_required",
+        "action": "没有能在实物叠贴后完整保留当前主张的组合；隔离并返印或制作新的永久贴。",
+        "executable": false,
+        "covered_qty": 0,
+        "short_qty": 40,
+        "allocations": [],
+        "effective_assets": [],
+        "evaluation": {
+          "compliant": false,
+          "blockers": [
+            {
+              "code": "LOT_MISMATCH",
+              "message": "印面批号限定 V8 不覆盖订单批号 V9"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MISSING_CONDITION_TEXT",
+              "message": "原声明含附带条件，但组合中没有对应印面；需业务/法规确认是否阻断"
+            }
+          ],
+          "requirements": {
+            "series": "A",
+            "market": "南区",
+            "forbidden_voltages": [
+              "24V"
+            ],
+            "required_voltages": [
+              "12V"
+            ],
+            "withdrawal_claim_ids": [
+              "C4"
+            ]
+          },
+          "surface_ids": [
+            "P1",
+            "P4"
+          ],
+          "visible_surface_ids": [
+            "P4"
+          ],
+          "durable_outer_ids": [
+            "P4"
+          ],
+          "opening_ids": [],
+          "hidden_coverage": {
+            "P1": "P4"
+          },
+          "collated_text": [
+            {
+              "id": "P4",
+              "layer": 4,
+              "text": "Solo 12 V. Serie A, lote V8."
+            }
+          ]
+        },
+        "blocked_candidate": {
+          "kind": "new_stock_combo",
+          "surface_ids": [
+            "P1",
+            "P4"
+          ],
+          "additions": [
+            "P4"
+          ],
+          "compliant": false,
+          "blockers": [
+            {
+              "code": "LOT_MISMATCH",
+              "message": "印面批号限定 V8 不覆盖订单批号 V9"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MISSING_CONDITION_TEXT",
+              "message": "原声明含附带条件，但组合中没有对应印面；需业务/法规确认是否阻断"
+            }
+          ],
+          "region_blocked": false,
+          "blocked_surfaces": [],
+          "currently_coverable_qty": 0
+        },
+        "chosen_option": null,
+        "channel": {
+          "id": "SC1",
+          "market": "南区",
+          "stage_visibility": "摆货看底盒正面及永久外贴，价格签付款可揭，箱内卡仅开箱可见"
+        },
+        "priority": {
+          "promised": false,
+          "rank_key": [
+            1,
+            "9999-12-31",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "reservations": [
+      {
+        "batch_id": "D1",
+        "stock_id": "I3",
+        "surface_id": "P4",
+        "qty": 60,
+        "region": "南区"
+      }
+    ],
+    "stock": [
+      {
+        "id": "I1",
+        "item": "P1",
+        "qty": 100,
+        "region": "通用",
+        "remaining_qty": 100
+      },
+      {
+        "id": "I2",
+        "item": "P3",
+        "qty": 45,
+        "region": "南区",
+        "remaining_qty": 45
+      },
+      {
+        "id": "I3",
+        "item": "P4",
+        "qty": 60,
+        "region": "南区",
+        "remaining_qty": 0
+      },
+      {
+        "id": "I4",
+        "item": "P2",
+        "qty": 25,
+        "region": "南区",
+        "remaining_qty": 25
+      }
+    ],
+    "component_decisions": [
+      {
+        "stock_id": "I1",
+        "surface_id": "P1",
+        "sku": "底盒甲乙",
+        "kind": "base_box",
+        "verdict": "box_blank_conditionally_usable",
+        "usage": "底盒/盒胚仍可使用，但裸盒不得承担已断开或已撤回的主张；必须叠加完整合格的永久覆盖层。",
+        "market_scope": "通用",
+        "series_scope": [],
+        "lot_scope": [],
+        "qty": 100,
+        "allocated_qty": 0,
+        "remaining_qty": 100
+      },
+      {
+        "stock_id": "I2",
+        "surface_id": "P3",
+        "sku": "南区乙",
+        "kind": "sticker_or_label",
+        "verdict": "permanent_scope_patch",
+        "usage": "可在市场、系列、批号和数量匹配时作为永久范围/补正层。",
+        "market_scope": "南区",
+        "series_scope": [
+          "B"
+        ],
+        "lot_scope": [],
+        "qty": 45,
+        "allocated_qty": 0,
+        "remaining_qty": 45
+      },
+      {
+        "stock_id": "I3",
+        "surface_id": "P4",
+        "sku": "南区甲补",
+        "kind": "sticker_or_label",
+        "verdict": "permanent_scope_patch",
+        "usage": "可在市场、系列、批号和数量匹配时作为永久范围/补正层。",
+        "market_scope": "南区",
+        "series_scope": [
+          "A"
+        ],
+        "lot_scope": [
+          "V8"
+        ],
+        "qty": 60,
+        "allocated_qty": 60,
+        "remaining_qty": 0
+      },
+      {
+        "stock_id": "I4",
+        "surface_id": "P2",
+        "sku": "价签A",
+        "kind": "sticker_or_label",
+        "verdict": "internal_proof_only",
+        "usage": "可作为印厂核对线索或冗余短签；限定被揭掉后不能独立承担合规作用。",
+        "market_scope": "南区",
+        "series_scope": [
+          "A"
+        ],
+        "lot_scope": [],
+        "qty": 25,
+        "allocated_qty": 0,
+        "remaining_qty": 25
+      }
+    ]
+  }
+}
